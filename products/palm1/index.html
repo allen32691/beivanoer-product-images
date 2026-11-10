@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BEIVANOER Palm 1 掌靜脈智慧電子鎖｜概念測試 內部預覽</title>
+<style>
+  :root{
+    --bg:#FFFFFF;
+    --lite:#F6F6F6;
+    --text:#252525;
+    --gold:#C5A059;
+    --line:#EAEAEA;
+  }
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei",Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.7}
+  .container{max-width:1120px;margin:0 auto;padding:0 20px}
+  .top-banner{
+    width:100%;background:var(--lite);border-bottom:1px solid var(--line);color:#555;
+    font-size:13px;letter-spacing:.5px
+  }
+  .top-banner .container{
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding:10px 20px
+  }
+  .top-banner .flag{color:var(--gold);font-weight:600}
+  header.site{
+    padding:18px 0;border-bottom:1px solid var(--line)
+  }
+  .brandline{font-size:13px;color:#777;letter-spacing:1px}
+  .brandline b{color:var(--text)}
+  h1{font-size:24px;margin:6px 0 4px;font-weight:700;letter-spacing:.5px}
+  .subtitle{font-size:14px;color:#666;margin-bottom:6px}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+  .badge{
+    display:inline-block;border:1px solid var(--line);color:#666;padding:6px 10px;border-radius:999px;font-size:12px;background:#fff
+  }
+
+  /* Hero */
+  .hero{padding:18px 0 8px}
+  .hero-wrap{display:flex;flex-direction:column;gap:16px}
+  .hero-copy h2{font-size:22px;margin:0 0 6px}
+  .hero-copy .slogan{color:#555}
+  .hero-copy .slogan .gold{color:var(--gold)}
+  .hero-bullets{margin:12px 0 0;padding-left:18px}
+  .hero-bullets li{margin:6px 0;color:#444}
+  .hero-image{
+    background:linear-gradient(180deg,#fff,#fafafa);border:1px solid var(--line);border-radius:16px;
+    padding:16px;display:flex;justify-content:center;align-items:center
+  }
+  .hero-image img{
+    display:block;width:100%;max-width:760px;height:auto;border-radius:10px
+  }
+  .note{font-size:12px;color:#777}
+
+  /* Lifestyle */
+  .lifestyle{padding:10px 0 4px}
+  .life-card{
+    background:var(--lite);border:1px solid var(--line);border-radius:16px;padding:14px
+  }
+  .life-lead{font-size:15px;color:#5a5a5a;margin:0 0 10px}
+  .life-image{
+    display:block;width:100%;max-width:1100px;margin:0 auto;border-radius:12px;height:auto
+  }
+
+  /* Sections */
+  section.block{padding:22px 0;border-top:1px solid var(--line)}
+  h3.sec-title{font-size:18px;margin:0 0 12px;letter-spacing:.5px}
+  .cards{display:grid;grid-template-columns:1fr;gap:12px}
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px
+  }
+  .card h4{margin:0 0 6px;font-size:16px}
+  .tag-warn{display:inline-block;font-size:11px;color:#8a6d3b;background:#fff6e6;border:1px solid #f1dfbf;border-radius:6px;padding:2px 6px;margin-left:6px}
+  .muted{color:#666}
+  .grid-2{display:grid;grid-template-columns:1fr;gap:12px}
+  @media(min-width:840px){
+    .hero-wrap{flex-direction:row;align-items:center}
+    .hero-copy{flex:1}
+    .hero-image{flex:1}
+    .cards{grid-template-columns:repeat(2,1fr)}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+  }
+  @media(min-width:1080px){
+    .cards{grid-template-columns:repeat(3,1fr)}
+  }
+
+  /* Table */
+  .spec-table{width:100%;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+  .spec-table table{width:100%;border-collapse:collapse}
+  .spec-table th,.spec-table td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;font-size:14px;vertical-align:top}
+  .spec-table th{background:#fafafa;width:30%;font-weight:600}
+  .spec-hint{font-size:12px;color:#777;margin-top:6px}
+
+  /* CTA */
+  .cta{
+    background:var(--lite);border:1px solid var(--line);border-radius:14px;padding:16px
+  }
+  .cta p{margin:6px 0}
+  .btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+  .btn{
+    appearance:none;border:none;background:var(--gold);color:#fff;padding:10px 16px;border-radius:999px;font-size:14px;letter-spacing:.5px;cursor:default;opacity:.7
+  }
+  .btn.secondary{
+    background:transparent;color:#666;border:1px solid var(--line)
+  }
+
+  /* Footer */
+  footer.site{padding:24px 0;border-top:1px solid var(--line);text-align:center;color:#666;font-size:12px}
+  .legal{font-size:12px;color:#777;margin-top:6px}
+  .divider{height:1px;background:var(--line);margin:10px 0}
+  .goldline{height:2px;background:linear-gradient(90deg,transparent, var(--gold), transparent);margin:12px 0 6px;border-radius:2px}
+
+  /* Lists */
+  ul.clean{margin:0;padding-left:18px}
+  ul.clean li{margin:6px 0}
+</style>
+</head>
+<body>
+
+<div class="top-banner">
+  <div class="container">
+    <div class="flag">內部預覽版｜禁止正式上架</div>
+    <div class="note">本頁為概念測試用。所有功能、規格、安裝、保固與台灣法規/認證皆為待確認，圖片為概念示意。</div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="container">
+    <div class="brandline"><b>BEIVANOER 貝凡諾國際</b> · Design for Living｜台灣輕奢智慧居家品牌</div>
+    <h1>BEIVANOER Palm 1 掌靜脈智慧電子鎖（概念測試）</h1>
+    <div class="subtitle">掌心一放，進門更簡單</div>
+    <div class="badges">
+      <span class="badge">概念測試版</span>
+      <span class="badge">功能/規格待實機驗證</span>
+      <span class="badge">AI 圖示意</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-wrap">
+      <div class="hero-copy">
+        <h2>回家這件事，更直覺也更優雅 <span class="slogan">BEIVANOER <span class="gold">· Design for Living</span></span></h2>
+        <ul class="hero-bullets">
+          <li>掌部生物特徵的解鎖靈感與體驗（賣場宣稱／待確認）</li>
+          <li>多模態整合：臉部／指紋／密碼（賣場宣稱／待確認）</li>
+          <li>極簡槍灰金屬面板，融入成熟居家風格（外觀示意，非最終）</li>
+          <li>門外影像與室內顯示之整合構想（賣場宣稱／待確認）</li>
+          <li>行動 App 與遠端管理構想（賣場宣稱／待確認）</li>
+        </ul>
+        <p class="note">說明：本案為內部概念測試，尚未完成原廠與實機驗證；不得視為正式對外承諾。</p>
+      </div>
+      <div class="hero-image">
+        <img src="https://raw.githubusercontent.com/allen32691/beivanoer-product-images/main/Palm1_concept_main.png" alt="BEIVANOER Palm 1 掌靜脈智慧電子鎖 概念主視覺示意">
+      </div>
+    </div>
+  </section>
+
+  <!-- Lifestyle -->
+  <section class="lifestyle">
+    <div class="container">
+      <div class="life-card">
+        <p class="life-lead">生活情境示意｜輕奢居家風格，融入日常入口動線（概念圖）</p>
+        <img class="life-image" src="https://raw.githubusercontent.com/allen32691/beivanoer-product-images/main/Palm1_concept_lifestyle.png" alt="BEIVANOER Palm 1 居家使用情境概念示意圖">
+      </div>
+    </div>
+  </section>
+
+  <!-- Pain points -->
+  <section class="block">
+    <div class="container">
+      <h3 class="sec-title">消費者痛點｜來自台灣家庭的日常</h3>
+      <div class="grid-2">
+        <div class="card">
+          <h4>忘帶鑰匙、指紋辨識不穩</h4>
+          <p class="muted">長輩指紋淡薄或手濕常失敗，期待更穩定的解鎖方式。</p>
+        </div>
+        <div class="card">
+          <h4>夜歸不想摸黑找鑰匙</h4>
+          <p class="muted">希望更直覺的開門體驗與門外可視化，以提升便利與安心。</p>
+        </div>
+        <div class="card">
+          <h4>顧及長輩與孩子的便利與安全</h4>
+          <p class="muted">家中成員多元，盼能兼顧操作簡單與隱私安全。</p>
+        </div>
+        <div class="card">
+          <h4>安裝與售後不確定</h4>
+          <p class="muted">施工複雜度、後續維修與保固條款都是關注重點。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Five Features -->
+  <section class="block">
+    <div class="container">
+      <h3 class="sec-title">概念五大核心特色（非最終規格）</h3>
+      <div class="goldline"></div>
+      <div class="cards">
+        <div class="card">
+          <h4>掌心解鎖的直覺體驗 <span class="tag-warn">賣場宣稱／待確認</span></h4>
+          <p class="muted">以掌部生物特徵為靈感，期望帶來貼近生活的進門方式。實際效能須待原廠與實機驗證。</p>
+        </div>
+        <div class="card">
+          <h4>多模態解鎖整合 <span class="tag-warn">賣場宣稱／待確認</span></h4>
+          <p class="muted">規劃支援臉部、指紋、密碼等方式，提供情境彈性與備援路徑。</p>
+        </div>
+        <div class="card">
+          <h4>極簡外觀設計導向 <span class="tag-warn">外觀示意</span></h4>
+          <p class="muted">以極簡面板與成熟居家風格融合為目標。圖像為概念渲染，非實機成色。</p>
+        </div>
+        <div class="card">
+          <h4>門外影像與室內顯示 <span class="tag-warn">賣場宣稱／待確認</span></h4>
+          <p class="muted">結合電子貓眼與室內顯示的使用構想，實作規格與隱私合規仍待確認。</p>
+        </div>
+        <div class="card">
+          <h4>App 與遠端管理 <span class="tag-warn">賣場宣稱／待確認</span></h4>
+          <p class="muted">臨時密碼、紀錄查詢等功能構想中；雲端位置、資安與權限管理需審慎評估。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Function explanation -->
+  <section class="block">
+    <div class="container">
+      <h3 class="sec-title">產品功能說明｜資料來源與查證狀態</h3>
+      <div class="grid-2">
+        <div class="card">
+          <h4>已查證</h4>
+          <ul class="clean">
+            <li>來源平台：天貓／淘寶（使用者提供）</li>
+            <li>原始賣場品牌：Royalstar 榮事達（使用者提供）</li>
+            <li>BEIVANOER 品牌與標語：BEIVANOER · Design for Living</li>
+            <li>外觀方向：極簡風格，圖片為概念示意</li>
+            <li>台灣目標售價帶：NT$12,000～15,000（內部設定）</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>賣場宣稱（未驗證，均待確認）</h4>
+          <ul class="clean">
+            <li>掌靜脈辨識解鎖</li>
+            <li>3D 人臉辨識解鎖</li>
+            <li>指紋與密碼解鎖</li>
+            <li>電子貓眼與室內顯示螢幕</li>
+            <li>遠端監控與手機 App</li>
+            <li>自動反鎖</li>
+            <li>電池容量、續航與緊急供電</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" style="margin-top:12px">
+        <h4>待確認與疑點</h4>
+        <ul class="clean">
+          <li>原廠型號與量產版本</li>
+          <li>台灣適法性與認證：BSMI、NCC（若含無線/視訊/雲端）</li>
+          <li>門鎖規格：鎖體型式、開孔規格、適用門厚、門栓規格</li>
+          <li>電源方案：電池型式、續航、應急供電介面</li>
+          <li>App 生態：伺服器位置、資安與權限管理、在地化</li>
+          <li>保固條款、到府安裝與售後流程</li>
+          <li>影像與個資：人臉/掌靜脈/影像隱私合規</li>
+        </ul>
+      </div>
+      <p class="spec-hint">提醒：本區所述為來源彙整，未經實機驗證之內容均以「賣場宣稱／待確認」標示。</p>
+    </div>
+  </section>
+
+  <!-- Spec table -->
+  <section class="block">
+    <div class="container">
+      <h3 class="sec-title">詳細規格表（內部測試版）</h3>
+      <div class="spec-table">
+        <table>
+          <tr><th>品牌／標語</th><td>BEIVANOER 貝凡諾國際｜Design for Living（已查證：自有品牌）</td></tr>
+          <tr><th>產品內部命名</th><td>Palm 1 掌靜脈智慧電子鎖（概念測試）</td></tr>
+          <tr><th>原始賣場品牌</th><td>Royalstar 榮事達（使用者提供）</td></tr>
+          <tr><th>原廠型號</th><td>待原廠確認</td></tr>
+          <tr><th>解鎖方式</th><td>掌靜脈／3D 人臉／指紋／密碼（賣場宣稱／待確認）</td></tr>
+          <tr><th>影像與顯示</th><td>電子貓眼＋室內顯示（賣場宣稱／待確認）</td></tr>
+          <tr><th>App／遠端</th><td>賣場宣稱具備；實作、伺服器與資安在地化待確認</td></tr>
+          <tr><th>自動反鎖</th><td>賣場宣稱／待確認</td></tr>
+          <tr><th>電源／續航／應急供電</th><td>待確認</td></tr>
+          <tr><th>門厚與鎖體規格</th><td>待確認（推拉／把手形式、開孔規格等）</td></tr>
+          <tr><th>台灣法規／認證</th><td>BSMI／NCC／個資法等皆待確認</td></tr>
+          <tr><th>內容物與安裝</th><td>待確認（安裝與售後流程未定）</td></tr>
+          <tr><th>目標售價（台灣）</th><td>NT$12,000～15,000（內部設定，非最終售價）</td></tr>
+        </table>
+      </div>
+      <p class="spec-hint">註：所有未驗證項目不得視為對外承諾，正式上架前將依最終規格調整。</p>
+    </div>
+  </section>
+
+  <!-- Audience and scenarios -->
+  <section class="block">
+    <div class="container">
+      <h3 class="sec-title">適用族群與使用情境</h3>
+      <div class="grid-2">
+        <div class="card">
+          <h4>適用族群</h4>
+          <ul class="clean">
+            <li>40 歲以上重視品質、便利與設計感的家庭</li>
+            <li>與長輩或小孩同住、希望簡化進門流程的使用者</li>
+            <li>對智慧居家有興趣且在意隱私與安全者</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>可能的使用情境（概念）</h4>
+          <ul class="clean">
+            <li>夜間返家，以更直覺的方式開門，降低摸索時間</li>
+            <li>家中長輩指紋不明顯時的替代解鎖想像</li>
+            <li>外出時希望能掌握出入紀錄與門外影像的構想</li>
+          </ul>
+          <p class="note">以上為概念溝通，功能皆屬賣場宣稱／待確認。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block">
+    <div class="container">
+      <h3 class="sec-title">FAQ 常見問題（內部版）</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>Q：是否具備掌靜脈與人臉辨識？</h4>
+          <p class="muted">A：屬賣場宣稱，需待原廠與實機驗證後才能對外說明。</p>
+        </div>
+        <div class="card">
+          <h4>Q：是否支援 App 遠端與臨時密碼？</h4>
+          <p class="muted">A：為賣場宣稱，功能規格與資安合規尚未確認。</p>
+        </div>
+        <div class="card">
+          <h4>Q：台灣安裝、保固與認證狀態？</h4>
+          <p class="muted">A：均待確認。未完成前不提供正式銷售與安裝。</p>
+        </div>
+        <div class="card">
+          <h4>Q：何時上市？</h4>
+          <p class="muted">A：時程未定，將先完成可行性評估與法規確認。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & policy -->
+  <section class="block">
+    <div class="container">
+      <h3 class="sec-title">售價、安裝與保固資訊</h3>
+      <div class="cta">
+        <p>・目標售價區間（內部設定）：<b style="color:var(--gold)">NT$12,000～15,000</b>（非最終售價）</p>
+        <p>・安裝、保固與售後服務：<b>均待確認</b>，未完成前不得對外宣稱或承諾。</p>
+        <p>・台灣法規與認證（BSMI／NCC／個資法等）：<b>尚未完成</b>，相關合規經確認後方可進行正式銷售。</p>
+        <div class="divider"></div>
+        <p class="note">提醒：本區內容僅供內部參考，所有資訊可能依最終量產與法規審視結果調整。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Market observation (internal) -->
+  <section class="block">
+    <div class="container">
+      <h3 class="sec-title">市場觀察（僅供內部參考）</h3>
+      <p class="muted">公開資訊顯示，台灣具掌靜脈／人臉等高階功能的電子鎖，多落在約 NT$18,000～50,000 的標價區間（來源頁面標示，尚未獨立驗證且比對條件各異）。Palm 1 內部目標價屬入門至中階定位，需審慎評估安裝、保固與法規成本能否納入。</p>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="block">
+    <div class="container">
+      <div class="cta">
+        <h3 class="sec-title" style="margin-top:0">封測意向登記（內部測試用）</h3>
+        <p>目前僅招募內測意向名單，待完成實機與法規驗證後再行通知。</p>
+        <div class="btn-row">
+          <button class="btn" type="button" aria-disabled="true">加入意向名單（占位）</button>
+          <button class="btn secondary" type="button" aria-disabled="true">下載內部簡報（占位）</button>
+        </div>
+        <p class="legal">注意：本頁所有圖片為概念示意，功能／規格／保固／安裝與價格皆可能變更。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- To-collect list -->
+  <section class="block">
+    <div class="container">
+      <h3 class="sec-title">資料不足清單（待補檔）</h3>
+      <ul class="clean">
+        <li>原廠正式型號與最終外觀圖（含尺寸、材質、重量）</li>
+        <li>解鎖方式與算法說明（掌靜脈／人臉／指紋規格、成功率、誤判率）</li>
+        <li>影像／顯示與儲存架構（本地／雲端、隱私與告示）</li>
+        <li>App 生態（iOS／Android 版本、雲端位置、權限／資安白皮書）</li>
+        <li>電源與續航（電池型式、容量、應急供電介面／流程）</li>
+        <li>鎖體型式與安裝規格（門厚／開孔／舌栓規格）</li>
+        <li>台灣 BSMI／NCC 合規證明（含型號對應）</li>
+        <li>保固條款、安裝範圍與到府服務 SLA</li>
+        <li>隨機配件清單與包裝明細</li>
+        <li>中文使用手冊（含隱私權與資安聲明）</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div>BEIVANOER · Design for Living</div>
+    <div class="legal">本頁為 BEIVANOER 內部預覽稿，禁止對外公開與正式上架。完成原廠規格、法規適用性、安裝及保固確認前，不提供購買或付款連結。</div>
+  </div>
+</footer>
+
+</body>
+</html>
